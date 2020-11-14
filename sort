@@ -1,0 +1,26 @@
+input_list = []
+sorted_list = []
+
+
+n = int(input("Enter number of elements : "))
+
+
+for i in range(0, n):
+	ele = int(input())
+
+	input_list.append(ele)
+
+
+print(input_list)
+
+
+while input_list:
+    min = input_list[0]
+    for x in input_list:
+        if x < min:
+            min = x
+    sorted_list.append(min)
+    input_list.remove(min)
+
+print('the sorted array is')
+print(sorted_list)
